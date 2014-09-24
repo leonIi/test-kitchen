@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-6.5
+    driver_config:
+      box: centos-6.5
+      box_download_insecure: true
+      box_url: file:///~/Work/chef/scm-images/images/centos-6.5-x86_64-20140729-1.virtualbox.box
+      vm_hostname: centos-6.5
+
+suites:
+  - name: default
+    run_list:
+    attributes:

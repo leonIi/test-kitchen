@@ -11,3 +11,5 @@ end
 group :test do
   gem 'codeclimate-test-reporter', require: nil
 end
+gem 'test-kitchen'
+gem 'kitchen-vagrant'
